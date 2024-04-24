@@ -1,0 +1,562 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  z-index: 99;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+header.hidden a {
+  color: #171616;
+  text-decoration: none;
+}
+
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+header img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #666666;
+}
+
+
+
+.image {
+    margin-top: 60px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* PROMOSI */
+.description {
+  text-align: center;
+  margin-top: 70px; /* Sesuaikan dengan kebutuhan Anda */
+}
+
+.img-promo {
+text-align: center;
+}
+
+.img-promo img {
+  float: left; /* Gambar berada di sebelah kiri */
+  max-width: 40%; /* Sesuaikan dengan ukuran poster Anda */
+  height: auto; /* Biarkan tinggi otomatis agar proporsi gambar tidak terganggu */
+  margin-right: 20px; /* Memberi jarak antara gambar dan teks */
+  margin-left: 100px; /* Memberi jarak agar gambar tidak terlalu mepet ke kiri */
+}
+
+.img-promo h2 {
+  margin-bottom: 30px;
+  font-size: 36px; /* Menyesuaikan ukuran teks menjadi lebih besar */
+}
+
+.img-promo p {
+  font-weight: 450;
+  text-align: justify; /* Untuk membuat teks rata kanan kiri */
+  margin-right: 100px; /* Memberi jarak antara paragraf dan gambar */
+}
+
+.btn-info-promo {
+  display: inline-block;
+  background-color: #161616;
+  color: #fff;
+  padding: 15px 25px; /* Memperbesar padding */
+  text-decoration: none;
+  border-radius: 8px; /* Memperbesar border radius */
+  margin-right: 80vh;
+  font-size: 18px; /* Memperbesar ukuran font */
+  border-width: 2px; /* Memperbesar lebar border */
+}
+.btn-info-promo:hover {
+  background-color: #414141; /* Mengubah warna saat mouse berada di atas tombol */
+}
+
+
+/* BEST PRODUK */
+
+.best-product {
+    text-align: center;
+    margin-top: 100px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #393939, #1a1a1a);
+    padding: 50px 0; /* Sesuaikan padding sesuai kebutuhan */
+}
+
+.best-product h3 {
+    margin-bottom: 0px;
+    margin-top: 10px; /* Mengurangi jarak atas pada judul */
+    font-size: 36px; /* Menyesuaikan ukuran teks menjadi lebih besar */
+}
+
+.best-product p {
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: center; /* Menengahkan teks */
+}
+
+.product-item {
+    display: inline-block;
+    width: 40%; /* Menyesuaikan lebar item produk menjadi lebih besar */
+    margin: 0 25px; /* Menambahkan margin agar item produk terlihat lebih terpisah */
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-item h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px; /* Menyesuaikan ukuran teks judul produk menjadi lebih besar */
+}
+
+.product-item p {
+    font-weight: 300;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-right: 20px;
+    font-size: 16px; /* Menyesuaikan ukuran teks deskripsi produk menjadi lebih besar */
+    font-style: italic;
+}
+
+.product-item button {
+    background-color: #ffb702;
+    color: #2d2d2d;
+    border: none;
+    padding: 10px 20px; /* Menyesuaikan padding tombol agar lebih besar */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Menyesuaikan ukuran teks tombol menjadi lebih besar */
+}
+.product-item button:hover {
+    background-color: #fcd125; /* Mengubah warna saat mouse berada di atas tombol */
+}
+
+
+
+/* GALERI */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.slideshow-container h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.slideshow-container p {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto; /* Mengatur gambar berada di tengah */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 200px;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 200px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+
+
+/* FOOTER */
+/* CSS untuk footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  margin-top: 50px;
+  position: relative; /* Menambahkan posisi relatif untuk menyelaraskan hak cipta */
+  display: flex; /* Mengaktifkan flexbox */
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Menambahkan baris baru untuk responsif */
+}
+
+.footer-content {
+  flex: 1 1 300px; /* Meratakan lebar kolom */
+  margin-bottom: 20px; /* Menambahkan ruang antar konten */
+  padding: 0 20px; /* Menambahkan ruang di sisi */
+  box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content h3 {
+  font-size: 21px;
+  margin-bottom: 30px;
+  margin-top: 0; /* Adjusted margin-top */
+  flex-grow: 1; /* Biarkan judul mengisi sisa ruang di dalam elemen .footer-content */
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+
+/* CSS untuk hak cipta */
+footer .copyright {
+  position: absolute; /* Mengatur posisi absolut */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0e0d0d;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 0.8em; /* Mengurangi ukuran teks */
+  height: 30px; /* Mengurangi tinggi elemen */
+  display: flex; /* Mengaktifkan flexbox */
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal */
+}
+footer .copyright a {
+  color: #fff; /* Warna tautan */
+  text-decoration: none; /* Hapus dekorasi tautan */
+}
+footer .copyright a:visited {
+  color: #ffffff; /* Ubah warna tautan saat diklik */
+}
+
+
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+  /* PROMOSI */
+  .description {
+    text-align: center;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .description img {
+    max-width: 40%;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  .description h2 {
+    font-size: 36px;
+  }
+
+  .description p {
+    margin-right: 0;
+  }
+
+  .btn-info-promo {
+    margin-right: 0;
+  }
+
+  /* BEST PRODUK */
+  .best-product {
+    text-align: center;
+    margin-top: 130px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #393939, #1a1a1a);
+    padding: 50px 0;
+  }
+
+  .best-product h3 {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .product-item {
+    width: 40%;
+    margin: 0 25px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+  /* PROMOSI */
+  header img {
+    width: 30px; /* Smaller size for mobile */
+    margin-right: 5px; /* Adjust margin for mobile */
+  }
+
+  h1 {
+    font-size: 20px; /* Smaller size for mobile */
+  }
+
+  nav ul li {
+    display: none; /* Hide icons on mobile */
+  }
+
+  .description {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .description h2 {
+    text-align: center;
+  }
+  
+  .img-promo {
+    align-items: center;
+  }
+
+  .img-promo img {
+    max-width: 65%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .img-promo p {
+    font-size: 14px;
+    margin: 0 50px; /* Tambahkan margin kiri dan kanan */
+  }
+
+  .btn-info-promo {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  
+  
+  /* BEST PRODUK */
+  .best-product {
+    text-align: center;
+    margin-top: 70px;
+    padding: 30px 0;
+  }
+
+  .best-product h3 {
+    font-size: 24px;
+  }
+  
+  .best-product h4 {
+    font-size: 18px;
+  }
+
+  .best-product p {
+    font-size: 14px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  .product-item {
+    width: 70%;
+    margin: 0 0 30px;
+    margin-top: 10px;
+  }
+  .product-item button {
+    font-size: 12px; /* Sesuaikan ukuran font tombol */
+    padding: 7px 10px; /* Sesuaikan padding tombol */
+  }
+  
+
+  /* GALERI */
+  .slideshow-container {
+    max-width: 80%; /* Mengurangi lebar kontainer galeri */
+    margin: 0 auto; /* Posisikan di tengah */
+    margin-top: 30px; /* Sesuaikan margin atas */
+  }
+  
+  .slideshow-container h2 {
+    font-size: 24px;
+  }
+  
+  .slideshow-container p {
+    font-size: 14px;
+  }
+
+  .mySlides img {
+    width: 100%; /* Mengisi lebar gambar ke kontainer */
+    height: auto; /* Biarkan tinggi sesuai aspek rasio */
+  }
+
+  .prev, .next {
+    top: 40%; /* Sesuaikan posisi tombol prev/next */
+    font-size: 16px; /* Sesuaikan ukuran font tombol */
+    padding: 10px; /* Sesuaikan padding tombol */
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 30px 0; /* Sesuaikan padding footer */
+    margin-top: 30px; /* Sesuaikan margin atas */
+  }
+
+  .footer-content h3 {
+    font-size: 15px; /* Sesuaikan ukuran font judul */
+    margin-bottom: 10px; /* Sesuaikan margin bawah judul */
+  }
+
+  .footer-content p {
+    font-size: 12px; /* Sesuaikan ukuran font paragraf */
+  }
+
+  footer .copyright {
+    padding: 10px 0; /* Sesuaikan padding hak cipta */
+    font-size: 0.7em; /* Sesuaikan ukuran font hak cipta */
+  }
+}
